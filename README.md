@@ -1,33 +1,33 @@
-# 📚 Projet 4 – Plateforme E-Learning
+#  Projet 4 – Plateforme E-Learning
 
-## 1️⃣ Contexte
+##  Contexte
 Ce projet consiste à développer une **plateforme simplifiée de e-learning** permettant de gérer les cours, les enseignants et les étudiants.  
 Le système modélise différents types de contenus pédagogiques (**Vidéo, Quiz**) et assure le suivi de la progression des étudiants.
 
 ---
 
-## 2️⃣ Objectifs Pédagogiques
+##  Objectifs Pédagogiques
 - Maîtriser l’**Héritage** et la **Classe Abstraite** (`Contenu`).
 - Appliquer le **Polymorphisme** pour l’affichage des contenus.
 - Utiliser une **Interface** (`Inscriptible`) et les **Collections** (`Map`).
 
 ---
 
-## 3️⃣ Fonctionnalités Requises
+##  Fonctionnalités Requises
 
-### 🎓 Gestion des Utilisateurs et Cours
+###  Gestion des Utilisateurs et Cours
 - Ajouter différents types de contenu (**Vidéo, Quiz**) à un cours.
 - Inscrire un étudiant à un cours (via l’interface `Inscriptible`).
 
-### 📈 Suivi de la Progression
+###  Suivi de la Progression
 - Marquer un contenu comme complété.
 - Calculer et mettre à jour la progression totale d’un étudiant dans un cours (en **pourcentage**) via une `Map`.
 
 ---
 
-## 4️⃣ Structure des Classes
+##  Structure des Classes
 
-### 🧩 Classe Abstraite `Contenu`
+###  Classe Abstraite `Contenu`
 - **Attributs privés :**
   - `String titre`
   - `boolean estComplete`
@@ -36,7 +36,7 @@ Le système modélise différents types de contenus pédagogiques (**Vidéo, Qui
 - **Méthode abstraite :**
   - `abstract void afficherDetails()`
 
-### 🧩 Classes Filles
+###  Classes Filles
 - **Video**
   - Attribut : `String urlVideo`
   - Affiche l’URL et la durée.
@@ -44,22 +44,22 @@ Le système modélise différents types de contenus pédagogiques (**Vidéo, Qui
   - Attribut : `int nbQuestions`
   - Affiche le nombre de questions et le score requis.
 
-### 🧩 Interface `Inscriptible`
+###  Interface `Inscriptible`
 - Méthode : `void inscrire(Etudiant etudiant)`
 
-### 🧩 Classe `Cours`
+###  Classe `Cours`
 - Utilise `Map<Etudiant, Double>` pour gérer la progression des étudiants.
 
 ---
 
-## 5️⃣ Contraintes Techniques
+##  Contraintes Techniques
 - **Polymorphisme strict** : `afficherDetails()` doit être implémentée pour afficher les informations uniques de `Video` et `Quiz`.
 - **Map obligatoire** : Lier chaque étudiant à son pourcentage d’achèvement.
 - **Progression dynamique** : Le pourcentage est calculé au moment de l’appel.
 
 ---
 
-## 6️⃣ Livrables Attendus
+##  Livrables Attendus
 - Code source complet organisé en packages :
   - `model`
   - `service`
@@ -71,15 +71,15 @@ Le système modélise différents types de contenus pédagogiques (**Vidéo, Qui
 
 ---
 
-## 7️⃣ Critères d’Évaluation (100%)
-- ✅ Fonctionnement du Polymorphisme (`afficherDetails`) : **25%**
-- ✅ Utilisation pertinente de l’Interface et de la Map : **25%**
-- ✅ Logique de calcul et mise à jour de la progression : **30%**
-- ✅ Respect de l’Héritage et de l’Encapsulation : **20%**
+##  Critères d’Évaluation (100%)
+-  Fonctionnement du Polymorphisme (`afficherDetails`) : **25%**
+-  Utilisation pertinente de l’Interface et de la Map : **25%**
+-  Logique de calcul et mise à jour de la progression : **30%**
+-  Respect de l’Héritage et de l’Encapsulation : **20%**
 
 ---
 
-## 🚀 Comment exécuter le projet
+##  Comment exécuter le projet
 1. Cloner le dépôt :
    ```bash
    git clone https://github.com/username/projet4-elearning.git
