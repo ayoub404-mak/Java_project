@@ -14,7 +14,7 @@ public class GestionCours {
     /**
      * Affiche la liste de tous les cours disponibles
      * 
-     * @param listeCours La liste des cours à afficher
+     *  La liste des cours à afficher
      */
     public void afficherTousLesCours(ArrayList<Cours> listeCours) {
         System.out.println("\n=== Liste des cours disponibles ===");
@@ -30,7 +30,7 @@ public class GestionCours {
     /**
      * Affiche les informations détaillées d'un cours spécifique
      * 
-     * @param cours Le cours dont on veut afficher les informations
+     * Le cours dont on veut afficher les informations
      */
     public void afficherInfosCours(Cours cours) {
         System.out.println("\n=== Informations du cours ===");
@@ -44,8 +44,8 @@ public class GestionCours {
      * Inscrit un étudiant à un cours
      * Délègue l'inscription à la méthode inscrire() du cours
      * 
-     * @param cours    Le cours auquel inscrire l'étudiant
-     * @param etudiant L'étudiant à inscrire
+     * Le cours auquel inscrire l'étudiant
+     * L'étudiant à inscrire
      */
     public void inscrireEtudiant(Cours cours, Etudiant etudiant) {
         cours.inscrire(etudiant);
@@ -54,8 +54,8 @@ public class GestionCours {
     /**
      * Affiche la progression d'un étudiant dans un cours
      * 
-     * @param cours    Le cours concerné
-     * @param etudiant L'étudiant dont on veut voir la progression
+     * Le cours concerné
+     * L'étudiant dont on veut voir la progression
      */
     public void afficherProgression(Cours cours, Etudiant etudiant) {
         System.out.println("\n=== Progression de l'etudiant ===");
@@ -71,9 +71,9 @@ public class GestionCours {
      * Marque un contenu comme complété pour un étudiant
      * Délègue l'opération à la méthode du cours
      * 
-     * @param cours        Le cours contenant le contenu
-     * @param etudiant     L'étudiant qui a complété le contenu
-     * @param indexContenu L'index du contenu à marquer comme complété
+     *Le cours contenant le contenu
+     *L'étudiant qui a complété le contenu
+     *L'index du contenu à marquer comme complété
      */
     public void marquerContenuComplete(Cours cours, Etudiant etudiant, int indexContenu) {
         cours.marquerContenuComplete(etudiant, indexContenu);
@@ -82,7 +82,7 @@ public class GestionCours {
     /**
      * Affiche tous les contenus d'un cours avec leurs détails
      * 
-     * @param cours Le cours dont on veut afficher les contenus
+     *Le cours dont on veut afficher les contenus
      */
     public void afficherTousLesContenus(Cours cours) {
         System.out.println("\n=== Contenus du cours: " + cours.getTitre() + " ===");
@@ -106,7 +106,7 @@ public class GestionCours {
      * Affiche la progression de tous les étudiants inscrits à un cours
      * Utilise la Map des progressions pour parcourir tous les étudiants
      * 
-     * @param cours Le cours dont on veut voir les progressions
+     *Le cours dont on veut voir les progressions
      */
     public void afficherProgressionTousEtudiants(Cours cours) {
         System.out.println("\n=== Progression de tous les etudiants ===");

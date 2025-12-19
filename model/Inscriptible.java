@@ -9,7 +9,7 @@ public interface Inscriptible {
     /**
      * Méthode pour inscrire un étudiant
      * 
-     * @param etudiant L'étudiant à inscrire
+     *L'étudiant à inscrire
      */
     void inscrire(Etudiant etudiant);
 }

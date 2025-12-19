@@ -14,9 +14,9 @@ public class Etudiant {
     /**
      * Constructeur de la classe Etudiant
      * 
-     * @param nom    Le nom de famille de l'étudiant
-     * @param prenom Le prénom de l'étudiant
-     * @param email  L'adresse email de l'étudiant
+     *Le nom de famille de l'étudiant
+     *Le prénom de l'étudiant
+     *L'adresse email de l'étudiant
      */
     public Etudiant(String nom, String prenom, String email) {
         this.nom = nom;
@@ -27,7 +27,7 @@ public class Etudiant {
     /**
      * Getter pour obtenir le nom de l'étudiant
      * 
-     * @return Le nom de famille
+     * Le nom de famille
      */
     public String getNom() {
         return nom;
@@ -36,7 +36,7 @@ public class Etudiant {
     /**
      * Getter pour obtenir le prénom de l'étudiant
      * 
-     * @return Le prénom
+     *Le prénom
      */
     public String getPrenom() {
         return prenom;
@@ -45,7 +45,7 @@ public class Etudiant {
     /**
      * Getter pour obtenir l'email de l'étudiant
      * 
-     * @return L'adresse email
+     *L'adresse email
      */
     public String getEmail() {
         return email;
@@ -54,7 +54,7 @@ public class Etudiant {
     /**
      * Méthode toString pour afficher les informations de l'étudiant
      * 
-     * @return Une chaîne formatée avec le nom, prénom et email
+     *Une chaîne formatée avec le nom, prénom et email
      */
     public String toString() {
         return nom + " " + prenom + " (" + email + ")";
