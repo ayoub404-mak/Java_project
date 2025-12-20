@@ -82,4 +82,4 @@ Le système modélise différents types de contenus pédagogiques (**Vidéo, Qui
 ##  Comment exécuter le projet
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/username/projet4-elearning.git
+   git clone https://github.com/ayoub404-mak/Java_project.git
